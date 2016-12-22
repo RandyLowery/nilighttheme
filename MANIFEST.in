@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include nilighttheme *.css
+recursive-include nilighttheme *.csv
+recursive-include nilighttheme *.html
+recursive-include nilighttheme *.ico
+recursive-include nilighttheme *.js
+recursive-include nilighttheme *.json
+recursive-include nilighttheme *.md
+recursive-include nilighttheme *.png
+recursive-include nilighttheme *.py
+recursive-include nilighttheme *.svg
+recursive-include nilighttheme *.txt
+recursive-exclude nilighttheme *.pyc
