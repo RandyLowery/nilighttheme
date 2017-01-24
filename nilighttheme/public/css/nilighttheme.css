@@ -261,7 +261,7 @@
 .ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited { color: #212121; text-decoration: none; }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #aaaaaa;  font-weight: normal; color: #212121; }
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121; text-decoration: none; }
-.ui-widget :active { outline: none; }
+.ui-widget :active {outline: none;}
 
 /* Interaction Cues
 ----------------------------------*/
@@ -772,7 +772,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
  * http://jqueryui.com/datepicker/
  */
 .ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
-.ui-datepicker .ui-datepicker-header {position:relative;padding:.2em 0;border:0px;font-weight: bold;width: 100%;padding: 4px 0;background-color: #7574ff;color: #808080;}
+.ui-datepicker .ui-datepicker-header {position:relative;padding:.2em 0;border:0px;font-weight: bold;width: 100%;padding: 4px 0;background-color: #ffffff;color: #808080;}
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {position:absolute;top: 2px;width: 1.8em;height: 1.8em;}
 
 .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { /*top: 1px;*/ }
@@ -1974,7 +1974,7 @@ th {
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: #eeeeee;
+  background: #383838;
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
@@ -2482,7 +2482,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1300px;
   }
 }
 .container-fluid {
@@ -3447,7 +3447,7 @@ output {
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   border-radius: 0px;
-  border-bottom: 1px solid #989797;
+  border-bottom: 1px solid #cecece;
   border-top: 1px solid rgba(0, 0, 0, 0);
   border-right: 1px solid rgba(0, 0, 0, 0);
   border-left: 1px solid rgba(0, 0, 0, 0);
@@ -3594,7 +3594,7 @@ fieldset[disabled] .checkbox label {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 0px;
 }
 select.input-sm {
   height: 30px;
@@ -4355,7 +4355,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #7574ff;
+  background-color: #ffa00a;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -4769,12 +4769,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
   padding: 10px 15px;
+  color: white;
+  background: rgba(37, 37, 37, 0);
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eaeaff;
+  background-color: rgba(255, 152, 0, 0.5);
   border-radius: 0px;
+  color: white;
 }
 .nav > li.disabled > a {
   color: #777;
@@ -4874,7 +4877,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
 }
 .nav-pills > li > a {
-  border-radius: 4px;
+  border-radius: 0px;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -4883,8 +4886,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: inherit;
-  background-color: #7574ff;
+  background-color: #ffa00a;
   color: white;
+  border-radius: 0px;
 }
 .nav-stacked > li {
   float: none;
@@ -5283,7 +5287,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: rgb(117, 116, 255);
+  background: WHITE;
+  border-bottom: 1px solid #ffa00a;
 }
 .navbar-default .navbar-brand {
   color: #6c7680;
@@ -5301,7 +5306,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #fafbfc;
+  color: #0064cd;
   background-color: transparent;
   border-bottom: 2px solid #dedede;
 }
@@ -5335,7 +5340,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #6d6cf5;
+  background-color: #ffa00a;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -9056,197 +9061,7 @@ a .icon-flip-vertical:before {
 }
 .mega-octicon { font-size: 32px; }
 
-.octicon-alert:before { content: '\f02d'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â­ */
-.octicon-arrow-down:before { content: '\f03f'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¿ */
-.octicon-arrow-left:before { content: '\f040'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ */
-.octicon-arrow-right:before { content: '\f03e'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¾ */
-.octicon-arrow-small-down:before { content: '\f0a0'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â  */
-.octicon-arrow-small-left:before { content: '\f0a1'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¡ */
-.octicon-arrow-small-right:before { content: '\f071'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â± */
-.octicon-arrow-small-up:before { content: '\f09f'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€¦Ã‚Â¸ */
-.octicon-arrow-up:before { content: '\f03d'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â½ */
-.octicon-microscope:before,
-.octicon-beaker:before { content: '\f0dd'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€šÃ‚Â */
-.octicon-bell:before { content: '\f0de'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€¦Ã‚Â¾ */
-.octicon-book:before { content: '\f007'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ */
-.octicon-bookmark:before { content: '\f07b'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â» */
-.octicon-briefcase:before { content: '\f0d3'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ */
-.octicon-broadcast:before { content: '\f048'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¹Ã¢â‚¬Â  */
-.octicon-browser:before { content: '\f0c5'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ */
-.octicon-bug:before { content: '\f091'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ */
-.octicon-calendar:before { content: '\f068'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¨ */
-.octicon-check:before { content: '\f03a'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âº */
-.octicon-checklist:before { content: '\f076'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¶ */
-.octicon-chevron-down:before { content: '\f0a3'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â£ */
-.octicon-chevron-left:before { content: '\f0a4'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¤ */
-.octicon-chevron-right:before { content: '\f078'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¸ */
-.octicon-chevron-up:before { content: '\f0a2'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¢ */
-.octicon-circle-slash:before { content: '\f084'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ */
-.octicon-circuit-board:before { content: '\f0d6'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ */
-.octicon-clippy:before { content: '\f035'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âµ */
-.octicon-clock:before { content: '\f046'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚Â  */
-.octicon-cloud-download:before { content: '\f00b'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ */
-.octicon-cloud-upload:before { content: '\f00c'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬â„¢ */
-.octicon-code:before { content: '\f05f'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¦Ã‚Â¸ */
-.octicon-color-mode:before { content: '\f065'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¥ */
-.octicon-comment-add:before,
-.octicon-comment:before { content: '\f02b'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â« */
-.octicon-comment-discussion:before { content: '\f04f'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â */
-.octicon-credit-card:before { content: '\f045'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ */
-.octicon-dash:before { content: '\f0ca'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€¦Ã‚Â  */
-.octicon-dashboard:before { content: '\f07d'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â½ */
-.octicon-database:before { content: '\f096'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ */
-.octicon-clone:before,
-.octicon-desktop-download:before { content: '\f0dc'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€¦Ã¢â‚¬Å“ */
-.octicon-device-camera:before { content: '\f056'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ */
-.octicon-device-camera-video:before { content: '\f057'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â */
-.octicon-device-desktop:before { content: '\f27c'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â°Ãƒâ€šÃ‚Â¼ */
-.octicon-device-mobile:before { content: '\f038'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¸ */
-.octicon-diff:before { content: '\f04d'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â */
-.octicon-diff-added:before { content: '\f06b'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â« */
-.octicon-diff-ignored:before { content: '\f099'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ */
-.octicon-diff-modified:before { content: '\f06d'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â­ */
-.octicon-diff-removed:before { content: '\f06c'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¬ */
-.octicon-diff-renamed:before { content: '\f06e'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â® */
-.octicon-ellipsis:before { content: '\f09a'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€¦Ã‚Â¡ */
-.octicon-eye-unwatch:before,
-.octicon-eye-watch:before,
-.octicon-eye:before { content: '\f04e'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¦Ã‚Â½ */
-.octicon-file-binary:before { content: '\f094'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â */
-.octicon-file-code:before { content: '\f010'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â */
-.octicon-file-directory:before { content: '\f016'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ */
-.octicon-file-media:before { content: '\f012'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ */
-.octicon-file-pdf:before { content: '\f014'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â */
-.octicon-file-submodule:before { content: '\f017'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â */
-.octicon-file-symlink-directory:before { content: '\f0b1'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â± */
-.octicon-file-symlink-file:before { content: '\f0b0'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â° */
-.octicon-file-text:before { content: '\f011'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ */
-.octicon-file-zip:before { content: '\f013'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ */
-.octicon-flame:before { content: '\f0d2'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ */
-.octicon-fold:before { content: '\f0cc'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€¦Ã¢â‚¬â„¢ */
-.octicon-gear:before { content: '\f02f'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¯ */
-.octicon-gift:before { content: '\f042'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ */
-.octicon-gist:before { content: '\f00e'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â½ */
-.octicon-gist-secret:before { content: '\f08c'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€¦Ã¢â‚¬â„¢ */
-.octicon-git-branch-create:before,
-.octicon-git-branch-delete:before,
-.octicon-git-branch:before { content: '\f020'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â  */
-.octicon-git-commit:before { content: '\f01f'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¸ */
-.octicon-git-compare:before { content: '\f0ac'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ */
-.octicon-git-merge:before { content: '\f023'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â£ */
-.octicon-git-pull-request-abandoned:before,
-.octicon-git-pull-request:before { content: '\f009'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â° */
-.octicon-globe:before { content: '\f0b6'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¶ */
-.octicon-graph:before { content: '\f043'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€ Ã¢â‚¬â„¢ */
-.octicon-heart:before { content: '\2665'} /* ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢Ãƒâ€šÃ‚Â¥ */
-.octicon-history:before { content: '\f07e'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¾ */
-.octicon-home:before { content: '\f08d'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â */
-.octicon-horizontal-rule:before { content: '\f070'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â° */
-.octicon-hubot:before { content: '\f09d'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â */
-.octicon-inbox:before { content: '\f0cf'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€šÃ‚Â */
-.octicon-info:before { content: '\f059'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ */
-.octicon-issue-closed:before { content: '\f028'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¨ */
-.octicon-issue-opened:before { content: '\f026'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ */
-.octicon-issue-reopened:before { content: '\f027'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â§ */
-.octicon-jersey:before { content: '\f019'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ */
-.octicon-key:before { content: '\f049'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚Â° */
-.octicon-keyboard:before { content: '\f00d'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â */
-.octicon-law:before { content: '\f0d8'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€¹Ã…â€œ */
-.octicon-light-bulb:before { content: '\f000'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ */
-.octicon-link:before { content: '\f05c'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¦Ã¢â‚¬Å“ */
-.octicon-link-external:before { content: '\f07f'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¿ */
-.octicon-list-ordered:before { content: '\f062'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¢ */
-.octicon-list-unordered:before { content: '\f061'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¡ */
-.octicon-location:before { content: '\f060'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â  */
-.octicon-gist-private:before,
-.octicon-mirror-private:before,
-.octicon-git-fork-private:before,
-.octicon-lock:before { content: '\f06a'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Âª */
-.octicon-logo-github:before { content: '\f092'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ */
-.octicon-mail:before { content: '\f03b'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â» */
-.octicon-mail-read:before { content: '\f03c'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¼ */
-.octicon-mail-reply:before { content: '\f051'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ */
-.octicon-mark-github:before { content: '\f00a'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â  */
-.octicon-markdown:before { content: '\f0c9'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â° */
-.octicon-megaphone:before { content: '\f077'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â· */
-.octicon-mention:before { content: '\f0be'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¾ */
-.octicon-milestone:before { content: '\f075'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Âµ */
-.octicon-mirror-public:before,
-.octicon-mirror:before { content: '\f024'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¤ */
-.octicon-mortar-board:before { content: '\f0d7'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â */
-.octicon-mute:before { content: '\f080'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ */
-.octicon-no-newline:before { content: '\f09c'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€¦Ã¢â‚¬Å“ */
-.octicon-octoface:before { content: '\f008'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã¢â‚¬Â  */
-.octicon-organization:before { content: '\f037'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â· */
-.octicon-package:before { content: '\f0c4'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ */
-.octicon-paintcan:before { content: '\f0d1'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ */
-.octicon-pencil:before { content: '\f058'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¹Ã…â€œ */
-.octicon-person-add:before,
-.octicon-person-follow:before,
-.octicon-person:before { content: '\f018'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œ */
-.octicon-pin:before { content: '\f041'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â */
-.octicon-plug:before { content: '\f0d4'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â */
-.octicon-repo-create:before,
-.octicon-gist-new:before,
-.octicon-file-directory-create:before,
-.octicon-file-add:before,
-.octicon-plus:before { content: '\f05d'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â */
-.octicon-primitive-dot:before { content: '\f052'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ */
-.octicon-primitive-square:before { content: '\f053'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ */
-.octicon-pulse:before { content: '\f085'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ */
-.octicon-question:before { content: '\f02c'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¬ */
-.octicon-quote:before { content: '\f063'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â£ */
-.octicon-radio-tower:before { content: '\f030'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â° */
-.octicon-repo-delete:before,
-.octicon-repo:before { content: '\f001'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â */
-.octicon-repo-clone:before { content: '\f04c'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¦Ã¢â‚¬â„¢ */
-.octicon-repo-force-push:before { content: '\f04a'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¦Ã‚Â  */
-.octicon-gist-fork:before,
-.octicon-repo-forked:before { content: '\f002'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ */
-.octicon-repo-pull:before { content: '\f006'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â  */
-.octicon-repo-push:before { content: '\f005'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ */
-.octicon-rocket:before { content: '\f033'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â³ */
-.octicon-rss:before { content: '\f034'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â´ */
-.octicon-ruby:before { content: '\f047'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ */
-.octicon-screen-full:before { content: '\f066'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¦ */
-.octicon-screen-normal:before { content: '\f067'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â§ */
-.octicon-search-save:before,
-.octicon-search:before {content: '\f02e';color: white;} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â® */
-.octicon-server:before { content: '\f097'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â */
-.octicon-settings:before { content: '\f07c'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¼ */
-.octicon-shield:before { content: '\f0e1'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€šÃ‚Â¡ */
-.octicon-log-in:before,
-.octicon-sign-in:before { content: '\f036'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¶ */
-.octicon-log-out:before,
-.octicon-sign-out:before { content: '\f032'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â² */
-.octicon-squirrel:before { content: '\f0b2'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â² */
-.octicon-star-add:before,
-.octicon-star-delete:before,
-.octicon-star:before { content: '\f02a'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âª */
-.octicon-stop:before { content: '\f08f'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â */
-.octicon-repo-sync:before,
-.octicon-sync:before { content: '\f087'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ */
-.octicon-tag-remove:before,
-.octicon-tag-add:before,
-.octicon-tag:before { content: '\f015'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ */
-.octicon-telescope:before { content: '\f088'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€¹Ã¢â‚¬Â  */
-.octicon-terminal:before { content: '\f0c8'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€¹Ã¢â‚¬Â  */
-.octicon-three-bars:before { content: '\f05e'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¦Ã‚Â¾ */
-.octicon-thumbsdown:before { content: '\f0db'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº */
-.octicon-thumbsup:before { content: '\f0da'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€¦Ã‚Â¡ */
-.octicon-tools:before { content: '\f031'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â± */
-.octicon-trashcan:before { content: '\f0d0'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€šÃ‚Â */
-.octicon-triangle-down:before { content: '\f05b'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº */
-.octicon-triangle-left:before { content: '\f044'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ */
-.octicon-triangle-right:before { content: '\f05a'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€¦Ã‚Â¡ */
-.octicon-triangle-up:before { content: '\f0aa'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Âª */
-.octicon-unfold:before { content: '\f039'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹ */
-.octicon-unmute:before { content: '\f0ba'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Âº */
-.octicon-versions:before { content: '\f064'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¤ */
-.octicon-watch:before { content: '\f0e0'} /* ÃƒÆ’Ã‚Â¯Ãƒâ€ Ã¢â‚¬â„¢Ãƒâ€šÃ‚Â  */
-.octicon-remove-close:before,
-.octicon-x:before { content: '\f081'} /* ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â */
-.octicon-zap:before { content: '\26A1'} /* ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã‚Â¡Ãƒâ€šÃ‚Â¡ */
+
 
 
 /*
@@ -9466,7 +9281,7 @@ a.grey:focus,
 .sidebar-section a:focus,
 .control-value a:focus,
 .data-row a:focus {
-  text-decoration: underline;
+  text-decoration: BLINK;
 }
 a.text-muted,
 a.text-extra-muted {
@@ -9870,6 +9685,7 @@ fieldset[disabled] .form-control {
 }
 .modal-header {
   padding: 10px 15px;
+  BOX-SHADOW: 1PX 1PX 5PX #ffffff;
 }
 .modal-title {
   margin-top: 5px;
@@ -10304,17 +10120,20 @@ fieldset[disabled] .form-control {
 }
 .dropdown-help .dropdown-menu .input-group {
   width: 100%;
-  background-color: #f5f7fa;
+  background-color: #ffffff;
   padding: 8px 12px;
 }
 .dropdown-help .dropdown-menu input {
   width: 100%;
   padding: 5px 10px;
   outline: none;
-  border-radius: 3px 0 0 3px;
-  border: 1px solid #d1d8dd;
+  border-radius: 0px;
+  border: 2px solid #ffa00a;
   opacity: 0.9;
   line-height: 1.5;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 .dropdown-help .dropdown-menu button {
   border: 1px solid #d1d8dd;
@@ -10354,10 +10173,10 @@ fieldset[disabled] .form-control {
 }
 #navbar-search {
   width: 300px;
-  background-color: rgb(117, 116, 255);
+  background-color: rgba(0, 0, 0, 0);
   BORDER-RADIUS: 0PX;
-  color: white;
-  border-bottom-color: white;
+  color: #0a0a0a;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 991px) {
   #navbar-search {
@@ -10406,7 +10225,7 @@ fieldset[disabled] .form-control {
 #navbar-breadcrumbs > li > a:hover:before,
 #navbar-breadcrumbs > li > a:focus:before,
 #navbar-breadcrumbs > li > a:active:before {
-  color: #d4edf5;
+  color: #0064cd;
 }
 #navbar-breadcrumbs > li > a {
   padding: 6px 15px 10px 0px;
@@ -10428,15 +10247,17 @@ fieldset[disabled] .form-control {
 }
 .navbar-brand > img {
   display: inline-block;
-  border: .5px solid white;
+  border: NONE;
   /* border-radius: 10px; */
+  WIDTH: 35PX;
+  MARGIN-TOP: -5PX;
 }
 .toggle-sidebar {
   margin-right: 10px;
 }
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-brand {
-  color: #e6edf5;
+  color: #5b5e61;
   border-bottom: none;
 }
 
@@ -10484,14 +10305,15 @@ body[data-route^="Module"] .main-menu .form-sidebar {
 }
 .layout-side-section {
   font-size: 12px;
-  BACKGROUND-COLOR: #fff;
-  box-shadow: 1px 1px 5px #a2a2a2;
+  BACKGROUND: rgba(255, 255, 255, 0);
+  box-shadow: none;
 }
 .layout-side-section > .divider {
   display: none !important;
 }
 .layout-side-section .sidebar-menu > li > a {
   display: inline-block;
+  color: orange;
 }
 .layout-side-section .sidebar-menu {
   margin: 30px 0px;
@@ -10508,6 +10330,8 @@ body[data-route^="Module"] .main-menu .form-sidebar {
   right: 0px;
   top: 0px;
   padding-bottom: 4px;
+  background: #ffa00a;
+  color: white;
 }
 .sidebar-menu .octicon {
   font-size: 12px;
@@ -10529,7 +10353,7 @@ body[data-route^="Module"] .main-menu .form-sidebar {
 }
 .form-sidebar .form-tags input {
   font-size: 12px !important;
-  color: #36414C !important;
+  color: #0281ff !important;
   font-style: italic;
 }
 .form-sidebar .form-tags .tagit-new {
@@ -10763,7 +10587,6 @@ a.close:focus {
  */
 .page-container {
   margin-top: 40px;
-  BACKGROUND: #eeeeee;
 }
 .page-head {
   border-bottom: 1px solid #d1d8dd;
@@ -10773,8 +10596,9 @@ a.close:focus {
   right: 0;
   top: 41px;
   margin: auto;
-  background-color: #eee;
+  background: WHITE;
   z-index: 101;
+  BOX-SHADOW: 1px 1px 5px #d4d4d4;
 }
 .sub-heading {
   display: inline-block;
@@ -10805,6 +10629,7 @@ a.close:focus {
   max-width: 75%;
   display: inline-block;
   vertical-align: middle;
+  color: #36414c;
 }
 .page-title .title-image {
   display: inline-block;
@@ -10849,11 +10674,13 @@ a.close:focus {
 .layout-main-section {
   border: 1px solid #d1d8dd;
   border-top: 0px;
-  box-shadow: 1px 1px 5px #a2a2a2;
+  box-shadow: 1px 1px 5px #484848;
   BACKGROUND: WHITE;
 }
 .layout-main-section-wrapper {
   margin-bottom: 60px;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 .layout-footer {
   border: 1px solid #d1d8dd;
@@ -10956,8 +10783,8 @@ ul.tree-children {
  */
 body[data-route=""] .navbar-default,
 body[data-route="desktop"] .navbar-default {
-  background-color: rgb(117, 116, 255);
-  border-color: rgba(54, 65, 76, 0.1);
+  background-color: #fafbfc;
+  border-color: #ffa00a;
 }
 #page-desktop {
   min-width: 100%;
@@ -10979,21 +10806,20 @@ body[data-route="desktop"] .navbar-default {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0.4px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   transition: 0.2s;
   -webkit-transition: 0.2s;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 .app-icon {
   padding: 20px;
   display: inline-block;
   margin: auto;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.44);
 }
 .app-icon .inner,
 .app-icon i {
@@ -11089,7 +10915,6 @@ body[data-route="desktop"] .navbar-default {
   }
   .app-icon {
     padding: 10px;
-    border-radius: 12px;
   }
   .app-icon i {
     font-size: 32px;
@@ -11150,15 +10975,17 @@ body[data-route="desktop"] .navbar-set-desktop-icons {
 .form-print-wrapper {
   border: 1px solid #d1d8dd;
   border-top: none;
+  BOX-SHADOW: 1px 1px 5px #3e3e3e;
 }
 .print-preview-wrapper {
   padding: 30px 0px;
-  background-color: #f5f7fa;
+  background-IMAge: URL("http://orig05.deviantart.net/7249/f/2007/185/5/7/wood_wallpaper_by_stenosis.jpg");
 }
 .print-toolbar {
   margin: 0px;
   padding: 10px 0px;
   border-bottom: 1px solid #d1d8dd;
+  BACKGROUND: WHITE;
 }
 .form-inner-toolbar {
   padding: 10px 15px 0px;
@@ -11312,7 +11139,7 @@ h6.uppercase,
 }
 .form-section {
   margin: 0px;
-  padding: 15px;
+  padding: 1px;
 }
 .form-section .form-section-heading {
   margin: 10px 0px;
@@ -11335,8 +11162,8 @@ h6.uppercase,
 }
 .form-section:not(:last-child),
 .form-inner-toolbar {
-  border-bottom: 1px solid #EBEFF2;
-  BACKGROUND: WHITE;
+  border-bottom: 1px solid #cccccc;
+  BACKGROUND: white;
 }
 .empty-section {
   display: none !important;
@@ -11496,7 +11323,7 @@ h6.uppercase,
   background-color: white;
   border: 1px solid #d1d8dd;
   border-radius: 2px;
-  box-shadow: 1px 1px 5px #a2a2a2;
+  box-shadow: 1px 1px 5px #484848;
 }
 .timeline-head .comment-input-header {
   background-color: #fafbfc;
@@ -11540,7 +11367,7 @@ h6.uppercase,
 }
 .control-label,
 .grid-heading-row {
-  color: #8D99A6;
+  color: #525252;
   font-size: 12px;
 }
 .control-label {
@@ -11714,6 +11541,7 @@ body {
 html,
 body {
   overflow-x: hidden;
+  background: #424242;
 }
 @media (max-width: 991px) {
   .intro-area,
@@ -12375,11 +12203,12 @@ classes should alter those!
   line-height: 16px;
   margin: 0;
   padding: 4px;
-  border-right: 1px solid silver;
+  border-right: 0px solid silver;
   border-left: 0px;
   border-top: 0px;
   border-bottom: 0px;
   float: left;
+  background: white;
 }
 
 .slick-headerrow-column.ui-state-default {
@@ -12649,7 +12478,6 @@ classes should alter those!
   text-overflow: clip;
 }
 .slick-headerrow-column input {
-  border: 1px solid #d1d8dd;
   border-radius: 3px;
   font-size: 12px;
   padding: 0px 3px !important;
@@ -12657,14 +12485,19 @@ classes should alter those!
   width: 100%;
   min-height: 20px;
   border-radius: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #70859a;
 }
 .slick-cell,
 .slick-headerrow-column {
   font-size: 12px;
-  border-color: transparent #d1d8dd #d1d8dd transparent !important;
   border-style: solid;
   color: inherit !important;
   margin-top: -1px;
+  border-left: none;
+  border-right: none;
 }
 .slick-cell pre {
   border: none;
@@ -12682,7 +12515,7 @@ classes should alter those!
 .slick-header-column:hover,
 .slick-header-column-active {
   background-image: none;
-  background-color: #d9e7f1;
+  background-color: rgba(255, 160, 10, 0.35);
 }
 .slick-row.odd .slick-cell {
   background-color: #fafbfc;
@@ -12692,14 +12525,14 @@ classes should alter those!
  *	/home/frappe/frappe-bench/apps/frappe/frappe/public/css/form_grid.css
  */
 .form-grid {
-  border: 1px solid #d1d8dd;
+  border: 1px solid #dadada;
   border-radius: 0px;
-  box-shadow: 1px 1px 5px #d5d5d5;
+  box-shadow: 1px 1px 3px #a9a9a9;
 }
 .grid-heading-row {
-  border-bottom: 1px solid #d1d8dd;
-  background-color: #F7FAFC;
+  border-bottom: 1px solid #ffa00a;
   font-weight: bold;
+  background: #ffffff !important;
 }
 .grid-row {
   padding: 0px 15px;
@@ -12757,8 +12590,8 @@ classes should alter those!
   margin-right: -10px;
 }
 .grid-row > .row .col {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .grid-body .btn-open-row {
   padding-top: 5px;
@@ -12988,9 +12821,7 @@ classes should alter those!
   border-bottom: 1px solid #d1d8dd !important;
 }
 .list-row:hover,
-.grid-row:hover {
-  background-color: #F7FAFC;
-}
+.grid-row:hover {BACKGROUND: rgba(255, 165, 0, 0.29);}
 .no-hover:hover {
   background-color: transparent !important;
 }
@@ -12998,8 +12829,8 @@ classes should alter those!
   border-bottom: 1px solid #cbcbcb;
 }
 .list-row-head {
-  background-color: #F7FAFC;
-  border-bottom: 1px solid #d1d8dd !important;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea !important;
 }
 .list-row .h6 {
   margin-top: 0px;
@@ -13013,7 +12844,7 @@ classes should alter those!
 }
 .list-paging-area {
   padding: 10px 15px;
-  border-top: 1px solid #d1d8dd;
+  border-top: 2px solid #ffa00a;
 }
 .list-value {
   vertical-align: middle;
@@ -13179,16 +13010,17 @@ ul.tagit li {
 }
 ul.tagit li.tagit-choice {
 	font-size: 11px;
-    padding: .2em;
+	padding: .2em;
 	padding-right: 18px;
 	padding-left: 4px;
-    position: relative;
+	position: relative;
 	background: none;
 	border: none;
 	box-shadow: none;
-	border-radius: 4px;
-	background-color: #F0F4F7;
+	border-radius: 0px;
+	background-color: #5e64ff;
 	cursor: pointer;
+	color: white;
 }
 
 ul.tagit li.tagit-new {
@@ -13221,19 +13053,18 @@ ul.tagit input[type="text"] {
     -moz-box-sizing:    border-box;
     -webkit-box-sizing: border-box;
     box-sizing:         border-box;
-
-	-moz-transition: none;
-	box-shadow: none;
+    -moz-transition: none;
+    box-shadow: none;
     border: none;
-	min-height: 0px;
+    min-height: 0px;
     margin: 1px 5px 1px 0;
     padding: 0.2em;
     width: inherit;
-	background: none;
+    background: none;
     background-color: transparent;
     outline: none;
-	font-size: 11px;
-	color: #777;
+    font-size: 11px;
+    color: #d20909;
 }
 
 /* in list */
@@ -13292,5 +13123,71 @@ th.fc-widget-header {
     height: auto !important;
   }
 }
+/*MODIFICACIONES A LAS FECHAS EN RANGE
+ */
+
+.ranges li.active {
+    background: #5e64ff;
+    border: none;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.ranges li {
+    font-size: 13px;
+    background: #F7FAFC;
+    border: 1px solid #F7FAFC;
+    border-radius: 4px;
+    color: #36414C;
+    padding: 3px 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 0px;
+}
 
 
+
+.daterangepicker .input-mini.active {
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.daterangepicker .input-mini {
+    border-radius: 0px;
+    color: #555;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    vertical-align: middle;
+    margin: 0 0 5px 0;
+    padding: 0 6px 0 28px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.daterangepicker select.monthselect {
+    margin-right: 2%;
+    width: 56%;
+    border: none;
+}
+
+.daterangepicker select.monthselect, .daterangepicker select.yearselect {
+    font-size: 12px;
+    padding: 1px;
+    height: auto;
+    margin: 0;
+    cursor: default;
+    border: none;
+}
+
+.tree:last-child::after, .tree-node:last-child::after {
+    top: 11px;
+    left: -13px;
+    height: calc(100% - 15px);
+    width: 3px;
+    background: #5e64ff;
+}
