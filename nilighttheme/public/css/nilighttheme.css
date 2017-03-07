@@ -2227,7 +2227,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #8d99a6;
+  color: #fff;
 }
 .text-primary {
   color: #5e64ff;
@@ -3919,7 +3919,7 @@ fieldset[disabled] .btn {
 }
 .btn-default {
   color: inherit;
-  background-color: #fafbfc;
+  background-color: lightgray;
   border-color: transparent;
 }
 .btn-default:hover,
@@ -9427,8 +9427,9 @@ p {
 .text-color {
   color: #36414C !important;
 }
-.text-muted {
-  color: #8D99A6 !important;
+ div.container.page-body > div.page-wrapper > div > div.row.layout-main > div.col-md-10.layout-main-section-wrapper > div.layout-main-section.listview-main-section > div.frappe-list-area > div > div.result > div.list-headers > div > div > div.col-xs-10.col-sm-10.list-row-left > div > div > span{
+
+  color: #fff !important;
 }
 .text-extra-muted {
   color: #d1d8dd !important;
@@ -11540,7 +11541,7 @@ h6.uppercase,
 }
 .control-label,
 .grid-heading-row {
-  color: #8D99A6;
+  color: #fff;
   font-size: 12px;
 }
 .control-label {
@@ -12698,8 +12699,12 @@ classes should alter those!
 }
 .grid-heading-row {
   border-bottom: 1px solid #d1d8dd;
-  background-color: #F7FAFC;
+  background-color: rgb(117, 116, 255);
   font-weight: bold;
+}
+.grid-heading-row :hover {
+  background-color: #c4bff2 !important;
+
 }
 .grid-row {
   padding: 0px 15px;
@@ -12984,8 +12989,12 @@ classes should alter those!
   margin-bottom: 0px;
 }
 .list-row-head {
-  background-color: #F7FAFC;
-  border-bottom: 1px solid #d1d8dd !important;
+  background-color: rgb(117, 116, 255);
+  border-bottom: 1px solid rgb(117, 116, 255) !important;
+}
+.list-row-head:hover {
+  background-color: #c4bff2 !important;
+
 }
 .list-row:hover,
 .grid-row:hover {
@@ -12998,8 +13007,8 @@ classes should alter those!
   border-bottom: 1px solid #cbcbcb;
 }
 .list-row-head {
-  background-color: #F7FAFC;
-  border-bottom: 1px solid #d1d8dd !important;
+  background-color: rgb(117, 116, 255);
+  border-bottom: 1px solid rgb(117, 116, 255) !important;
 }
 .list-row .h6 {
   margin-top: 0px;
@@ -13292,5 +13301,3 @@ th.fc-widget-header {
     height: auto !important;
   }
 }
-
-
